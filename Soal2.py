@@ -1,15 +1,15 @@
 import pandas as pd
 
 data = [
-    ["mahasiswa 1", 80, 70],
-    ["mahasiswa 2", 90, 85],
-    ["mahasiswa 3", 75, 80]
+    ["mahasiswa 1", 90, 80],
+    ["mahasiswa 2", 50, 60],
+    ["mahasiswa 3", 65, 70]
 ]
 
-df = pd.DataFrame(data, columns=["nama", "nilai 1", "nilai 2"])
+df = pd.DataFrame(data, columns=["nama", "Algoritma dan Struktur Data 2", "Matematika Numerik"])
 
 print("Rata-rata nilai untuk setiap mata kuliah:")
-print(df[["nilai 1", "nilai 2"]].mean())
+print(df[["Algoritma dan Struktur Data 2", "Matematika Numerik"]].mean())
 
 print("Rata-rata nilai untuk setiap mahasiswa:")
-print(df[["nilai 1", "nilai 2"]].mean(axis=1))
+print(df[["Algoritma dan Struktur Data 2", "Matematika Numerik"]].mean(axis=1))
