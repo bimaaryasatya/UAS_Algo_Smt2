@@ -14,7 +14,7 @@ class VitaminBuah(Buah):
 
     def display_vitamin_info(self):
         self.display_info()
-        print(f"{self.display_info}, Vitamin: {self.vitamin}")
+        print(f"{self.display_info()}\nVitamin: {self.vitamin}\n{self.display_info}")
 
 vb = VitaminBuah("Apel", "Merah", "Manis", "Vitamin C")
 vb.display_vitamin_info()
